@@ -1,0 +1,32 @@
+{
+  "short_name": "Sort",
+  "name": "Sort external memory",
+  "description": "This plugin lets you sort external memory.",
+  "maintainer": {
+    "name": "Example",
+    "email": "example-email@coursera.org"
+  },
+  "version": "0.1",
+  "sandbox": "allow-scripts allow-same-origin allow-forms",
+  "configurationExamples": [{
+    "configuration": {
+	  "E" : 7,
+	  "I" : 3,
+	  "B" : 3
+    },
+    "name": "My Config",
+    "description": "Simple config.",
+	"graderConfiguration": {}
+  }],
+  "macros": [],
+  "authorizations": {},
+  "actionTypes": [
+	"SET_ANSWER",
+	"GET_SESSION_CONFIGURATION"
+	],
+  "accessibility": {
+    "mobileCompatibility": {
+      "supportsTouch": false
+    }
+  }
+}

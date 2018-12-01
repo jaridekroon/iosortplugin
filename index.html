@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <style>
+
+    h1 {
+      padding: 20px 0px;
+    }
+
+    .section {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+    }
+
+    .block {
+      display: inline-block;
+      border: 1px solid black;
+      height: 25px;
+      width: 75px;
+      margin-left: -1px;
+      margin-bottom: -5px;
+	  vertical-align: top;
+    }
+
+    #extmem {
+      overflow: hidden;
+      padding-left: 30px;
+      padding-bottom: 10px;
+    }
+	#intmem {
+      overflow: hidden;
+      padding-left: 30px;
+      padding-bottom: 10px;
+    }
+
+    #nongrid {
+      padding-left: 10px;
+      float: left;
+    }
+
+  </style>
+  <head>
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+  </head>
+  <body>
+	<div id="nongrid" >
+      <h1>Sort the external memory</h1>
+	  <p> The goal of this exercise is to sort the elements located in external memory. You can do the following actions: </p>
+		<ul>
+		  <li>Move a block from external memory to an empty internal memory block.</li>
+		  <li>Move a block from internal memory to an empty external memory block.</li>
+		  <li>Sort the elements in internal memory.</li>
+		</ul>
+		<p> You can reset the memory to the initial configuration at any point. Once you have sorted all elements and put them back in external memory, press the "Submit" button.</p>
+      <div class="section">
+        External memory:
+        <div id="extmem" class="col"/>
+      </div>
+      <div class="section">
+        Internal memory:
+        <div id="intmem" class="col"/>
+      </div>
+      <div class="section">
+        <input id="sort" type="button" value="Sort internal memory">
+      </div>
+	  <div class="section">
+        <input id="submit" type="button" value="Submit answer">
+		<span id="feedback"></span>
+      </div>
+	  <div class="section">
+        <input id="reset" type="button" value="Reset memory">
+      </div>
+	</div>
+	<script src="sort.js"></script>
+  </body>
+</html>
